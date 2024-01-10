@@ -1,0 +1,986 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: rgb(255, 245, 243);
+  height: 100vh;
+}
+.main .sub_main {
+  position: relative;
+  height: 100%;
+  background-color: white;
+}
+.main .sub_main nav {
+  position: sticky;
+  top: 0;
+  z-index: 111;
+  background-color: white;
+}
+.main .sub_main nav .nav_container .logo {
+  cursor: pointer;
+}
+.main .sub_main nav .nav_container .logo i {
+  padding: 5px;
+  font-size: 2.5em;
+  color: rgb(254, 93, 55);
+}
+.main .sub_main nav .nav_container .logo span {
+  padding: 5px;
+  font-size: 2.5em;
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  color: rgb(254, 93, 55);
+}
+.main .sub_main nav .nav_container .collapse {
+  align-items: center;
+  justify-content: center;
+}
+.main .sub_main nav .nav_container .collapse ul li a {
+  font-weight: 500;
+}
+.main .sub_main nav .nav_container .collapse ul li a:hover {
+  color: rgb(254, 93, 55);
+}
+.main .sub_main nav .nav_container .collapse ul .dropdown .dropdown-toggle {
+  cursor: pointer;
+}
+.main .sub_main nav .nav_container .collapse ul .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.main .sub_main nav .join {
+  cursor: pointer;
+  background-color: rgb(254, 93, 55);
+  border-radius: 35px;
+  padding: 8px 10px 8px 10px;
+}
+.main .sub_main nav .join a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+.main .sub_main nav .join:hover {
+  background-color: rgb(250, 112, 81);
+}
+
+.carousel {
+  position: absolute;
+  top: 80px;
+  left: 170px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.carousel .carousel-inner .carousel-item {
+  position: relative;
+}
+.carousel .carousel-inner .carousel-item::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 19px;
+  top: auto;
+  bottom: 0;
+  background: url(/static/images/bg-header-bottom.png) center center repeat-x;
+}
+.carousel .carousel-inner .carousel-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: url(/static/images/bg-header-top.png) center center repeat-x;
+  z-index: 1;
+}
+.carousel .carousel-inner .carousel-item img {
+  filter: brightness(80%);
+}
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  left: 20px;
+  top: 150px;
+  right: 450px;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption .animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption h1 {
+  font-family: "Lobster Two", sans-serif;
+  font-size: 4.5em;
+  text-align: left;
+  font-weight: 700;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 1.2em;
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption .Learn {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(254, 93, 55);
+  padding: 18px 30px 18px 30px;
+  border-radius: 30px;
+  margin-left: -550px;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption .Our {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(16, 55, 65);
+  padding: 18px 30px 18px 30px;
+  border-radius: 30px;
+}
+.carousel button {
+  border: 1px solid white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.carousel button:hover {
+  background-color: rgb(243, 89, 54);
+}
+.carousel .carousel-control-prev {
+  margin-left: 1200px;
+  margin-top: 350px;
+}
+.carousel .carousel-control-next {
+  margin-top: 410px;
+  margin-right: 70px;
+}
+
+section {
+  background-color: rgb(255, 245, 243);
+  height: 100vh;
+}
+section .School {
+  height: 100%;
+  background-color: white;
+}
+section .School .School_facilities {
+  display: flex;
+  flex-direction: column;
+}
+section .School .School_facilities .text {
+  text-align: center;
+}
+section .School .School_facilities .text h1 {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 600;
+  margin-top: 100px;
+}
+section .School .School_facilities .text p {
+  color: rgb(134, 122, 136);
+  margin-left: 340px;
+  margin-right: 340px;
+  margin-top: 50px;
+}
+section .School .School_facilities .dolls {
+  margin-top: 50px;
+}
+section .School .School_facilities .dolls .doll_row .one .facility_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .School .School_facilities .dolls .doll_row .one .facility_item .icon {
+  position: relative;
+  background-color: rgb(255, 245, 243);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .School .School_facilities .dolls .doll_row .one .facility_item .icon i {
+  font-size: 3em;
+  color: rgb(254, 93, 55);
+}
+section .School .School_facilities .dolls .doll_row .one .facility_item .icon::before {
+  position: absolute;
+  content: " ";
+  height: 40px;
+  width: 15px;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: rgb(255, 245, 243);
+}
+section .School .School_facilities .dolls .doll_row .one .facility_item .icon::after {
+  position: absolute;
+  content: " ";
+  height: 40px;
+  width: 15px;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: rgb(255, 245, 243);
+}
+section .School .School_facilities .dolls .doll_row .one .facility_item .details {
+  background-color: rgb(255, 245, 243);
+  border-radius: 50%;
+  height: 280px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+section .School .School_facilities .dolls .doll_row .one .facility_item .details h3 {
+  font-family: "Lobster Two", sans-serif;
+  color: rgb(254, 93, 55);
+  font-weight: 600;
+}
+section .School .School_facilities .dolls .doll_row .one .facility_item .details p {
+  color: rgb(134, 122, 136);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+section .School .School_facilities .dolls .doll_row .one:hover .icon,
+section .School .School_facilities .dolls .doll_row .one:hover .details {
+  transition: 1s;
+  background-color: rgb(254, 93, 55);
+}
+section .School .School_facilities .dolls .doll_row .one:hover .icon i {
+  color: white;
+}
+section .School .School_facilities .dolls .doll_row .one:hover .details h3,
+section .School .School_facilities .dolls .doll_row .one:hover .details p {
+  color: white;
+}
+section .School .School_facilities .dolls .doll_row .one:hover .icon {
+  background-color: rgb(254, 93, 55);
+}
+section .School .School_facilities .dolls .doll_row .one:hover:hover::after {
+  background-color: rgb(254, 93, 55);
+}
+section .School .School_facilities .dolls .doll_row .one:hover:hover::before {
+  background-color: rgb(254, 93, 55);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(2) .facility_item .icon {
+  background-color: rgb(232, 243, 238);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(2) .facility_item .icon i {
+  color: rgb(25, 135, 84);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(2) .facility_item .icon::after, section .School .School_facilities .dolls .doll_row .one:nth-child(2) .facility_item .icon::before {
+  background-color: rgb(232, 243, 238);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(2) .facility_item .details {
+  background-color: rgb(232, 243, 238);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(2) .facility_item .details h3 {
+  color: rgb(25, 135, 84);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(2):hover .icon,
+section .School .School_facilities .dolls .doll_row .one:nth-child(2):hover .details {
+  background-color: rgb(25, 135, 84);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(2):hover .icon i {
+  color: white;
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(2):hover .details h3,
+section .School .School_facilities .dolls .doll_row .one:nth-child(2):hover .details p {
+  color: white;
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(2):hover .icon {
+  background-color: rgb(25, 135, 84);
+}
+section .School .School_facilities .dolls .doll_row:hover:after, section .School .School_facilities .dolls .doll_row:hover:before {
+  background-color: rgb(25, 135, 84);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(3) .facility_item .icon {
+  background-color: rgb(255, 249, 231);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(3) .facility_item .icon i {
+  color: rgb(255, 193, 7);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(3) .facility_item .icon::after, section .School .School_facilities .dolls .doll_row .one:nth-child(3) .facility_item .icon::before {
+  background-color: rgb(255, 249, 231);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(3) .facility_item .details {
+  background-color: rgb(255, 249, 231);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(3) .facility_item .details h3 {
+  color: rgb(255, 193, 7);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(3):hover .icon,
+section .School .School_facilities .dolls .doll_row .one:nth-child(3):hover .details {
+  background-color: rgb(255, 193, 7);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(3):hover .icon i {
+  color: white;
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(3):hover .details h3,
+section .School .School_facilities .dolls .doll_row .one:nth-child(3):hover .details p {
+  color: white;
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(3):hover .icon {
+  background-color: rgb(255, 193, 7);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(4) .facility_item .icon {
+  background-color: rgb(231, 250, 254);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(4) .facility_item .icon i {
+  color: rgb(13, 202, 240);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(4) .facility_item .icon::after, section .School .School_facilities .dolls .doll_row .one:nth-child(4) .facility_item .icon::before {
+  background-color: rgb(231, 250, 254);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(4) .facility_item .details {
+  background-color: rgb(231, 250, 254);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(4) .facility_item .details h3 {
+  color: rgb(13, 202, 240);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(4):hover .icon,
+section .School .School_facilities .dolls .doll_row .one:nth-child(4):hover .details {
+  background-color: rgb(13, 202, 240);
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(4):hover .icon i {
+  color: white;
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(4):hover .details h3,
+section .School .School_facilities .dolls .doll_row .one:nth-child(4):hover .details p {
+  color: white;
+}
+section .School .School_facilities .dolls .doll_row .one:nth-child(4):hover .icon {
+  background-color: rgb(13, 202, 240);
+}
+
+section {
+  background-color: rgb(255, 245, 243);
+}
+section .about_section {
+  height: 100vh;
+  background-color: white;
+}
+section .about_section .about .text {
+  padding: 20px;
+  margin-top: 150px;
+}
+section .about_section .about .text h1 {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 600;
+}
+section .about_section .about .text p {
+  color: rgb(120, 122, 124);
+  margin-right: 20px;
+}
+section .about_section .about .text .read_more {
+  margin-top: 50px;
+}
+section .about_section .about .text .read_more a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(254, 93, 55);
+  padding: 20px 30px 20px 30px;
+  border-radius: 30px;
+}
+section .about_section .about .text .read_more a:hover {
+  background-color: rgb(251, 107, 74);
+}
+section .about_section .about .text .ceo {
+  display: flex;
+  justify-content: space-between;
+}
+section .about_section .pic {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+section .about_section .pic img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+section .about_section .pic .name h6 {
+  color: rgb(254, 93, 55);
+}
+section .about_section .pic .name p {
+  font-size: 0.9em;
+}
+section .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .images img {
+  border-radius: 50%;
+  border: 16px solid rgb(255, 245, 243);
+}
+section .images img:hover {
+  border: 16px solid rgb(254, 93, 55);
+  transition: 1s;
+}
+
+section {
+  height: 100vh;
+}
+section .teacher_section {
+  height: 100%;
+  background-color: white;
+}
+section .teacher_section .become_teacher {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+section .teacher_section .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+  background-color: rgb(255, 245, 243);
+  border-radius: 0px 20px 20px 0px;
+}
+section .teacher_section .text h1 {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 600;
+  padding-left: 20px;
+}
+section .teacher_section .text p {
+  padding-left: 20px;
+  color: rgb(120, 122, 124);
+  font-size: 1em;
+  font-weight: 400;
+}
+section .teacher_section .image img {
+  border-radius: 20px 0px 0px 20px;
+  height: 400px;
+  width: 100%;
+}
+section .teacher_section a {
+  height: 60px;
+  width: 560px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(254, 93, 55);
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 700;
+}
+section .teacher_section a i {
+  padding: 10px;
+}
+section .teacher_section a:hover {
+  background-color: rgb(250, 113, 82);
+}
+
+section {
+  height: auto;
+}
+section .School_class_section {
+  margin-top: -350px;
+  background-color: white;
+}
+section .School_class_section .text {
+  text-align: center;
+}
+section .School_class_section .text h1 {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 600;
+}
+section .School_class_section .text p {
+  color: rgb(120, 122, 124);
+  font-size: 1em;
+  font-weight: 400;
+  padding-left: 340px;
+  padding-right: 340px;
+}
+section .School_class_section .image .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+section .School_class_section .image .details .picture {
+  z-index: 1;
+}
+section .School_class_section .image .details .picture img {
+  border: 16px solid rgb(255, 245, 243);
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+}
+section .School_class_section .image .details .content {
+  background-color: rgb(255, 245, 243);
+  width: 100%;
+  padding-top: 50px;
+  margin-top: -50px;
+  border-radius: 10px;
+}
+section .School_class_section .image .details .content h5 {
+  text-align: center;
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 600;
+}
+section .School_class_section .image .details .content h5:hover {
+  color: rgb(238, 74, 33);
+  cursor: pointer;
+}
+section .School_class_section .image .details .content .pic {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .School_class_section .image .details .content .pic .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .School_class_section .image .details .content .pic .wrap .photo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+section .School_class_section .image .details .content .pic .wrap .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+section .School_class_section .image .details .content .pic .wrap .name h6 {
+  color: rgb(254, 93, 55);
+  font-size: 0.9em;
+  margin: 0;
+}
+section .School_class_section .image .details .content .pic .wrap .name p {
+  font-size: 0.9em;
+  margin: 0;
+}
+section .School_class_section .image .details .content .pic .read_more a {
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(246, 85, 49);
+}
+section .School_class_section .image .details .age_time_capacity {
+  background-color: rgb(255, 245, 243);
+  width: 100%;
+  padding-top: 10px;
+  padding: 10px;
+}
+section .School_class_section .image .details .age_time_capacity .item {
+  border-top: 3px solid rgb(246, 85, 49);
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  width: 110px;
+}
+section .School_class_section .image .details .age_time_capacity .item p {
+  margin: 0;
+  font-weight: 500;
+}
+section .School_class_section .image .details .age_time_capacity .item:nth-child(2) {
+  border-top: 3px solid rgb(25, 135, 84);
+}
+section .School_class_section .image .details .age_time_capacity .item:nth-child(3) {
+  border-top: 3px solid rgb(255, 193, 7);
+}
+
+section {
+  background-color: rgb(255, 245, 243);
+}
+section .appointment_section {
+  height: 110vh;
+  background-color: white;
+  padding: 50px;
+  padding-top: 400px;
+}
+section .appointment_section .form {
+  padding: 20px;
+  background-color: rgb(255, 245, 243);
+  height: 80%;
+  border-radius: 10px 0px 0px 10px;
+}
+section .appointment_section .form h2 {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 600;
+}
+section .appointment_section .form form {
+  background-color: rgb(255, 245, 243);
+  border: none;
+  outline: none;
+}
+section .appointment_section .form form .first_row input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+section .appointment_section .form form .message {
+  width: 100%;
+}
+section .appointment_section .form form .message input {
+  padding-top: 15px;
+  padding-bottom: 60px;
+  padding-left: 5px;
+  padding-right: 280px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+section .appointment_section .form button {
+  width: 600px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: rgb(250, 113, 82);
+  color: white;
+  font-weight: 500;
+}
+section .appointment_section .form button:hover {
+  background-color: rgb(255, 129, 100);
+}
+section .appointment_section .form .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: none;
+  outline: none;
+}
+section .appointment_section .image img {
+  border-radius: 10px;
+  height: 80%;
+  width: 100%;
+}
+
+section {
+  background-color: rgb(255, 245, 243);
+  height: 110vh !important;
+}
+section .popular_teacher_section {
+  height: auto;
+  padding-top: 150px;
+  background-color: white;
+}
+section .popular_teacher_section .text {
+  text-align: center;
+}
+section .popular_teacher_section .text h1 {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 600;
+}
+section .popular_teacher_section .text p {
+  margin-left: 340px;
+  margin-right: 340px;
+  color: rgb(116, 120, 124);
+}
+section .popular_teacher_section .teachers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  height: 110%;
+}
+section .popular_teacher_section .teachers .teacher {
+  position: relative;
+}
+section .popular_teacher_section .teachers .teacher img {
+  margin: 30px;
+  border-radius: 50%;
+  height: 600px;
+}
+section .popular_teacher_section .teachers .teacher .circle {
+  position: absolute;
+  right: 0;
+  top: 400px;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  background-color: white;
+  border: 18px solid rgb(255, 245, 243);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .popular_teacher_section .teachers .teacher .circle h2 {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 600;
+}
+section .popular_teacher_section .teachers .teacher .circle ul {
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .popular_teacher_section .teachers .teacher .circle ul li {
+  list-style: none;
+}
+section .popular_teacher_section .teachers .teacher .circle ul li i {
+  margin: 5px;
+  font-size: 1.8em;
+  color: rgb(243, 89, 54);
+}
+section .popular_teacher_section .teachers .teacher:hover .circle {
+  border: 18px solid rgb(243, 89, 54);
+  transition: 1s;
+}
+
+section {
+  background-color: rgb(255, 245, 243);
+  height: 100vh;
+}
+section .testimonial_section {
+  padding-top: 100px;
+  background-color: white;
+  position: relative;
+  height: 100%;
+}
+section .testimonial_section .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+section .testimonial_section .text h1 {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 600;
+  color: rgb(16, 55, 65);
+}
+section .testimonial_section .text p {
+  margin-left: 340px;
+  margin-right: 340px;
+  color: rgb(116, 120, 124);
+}
+section .testimonial_section .testimonial {
+  position: relative;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-bottom: 100px;
+}
+section .testimonial_section .swiper-slide {
+  padding: 20px;
+  margin: 10px;
+  width: 580px !important;
+  border-radius: 10px;
+  background-color: rgb(255, 245, 243);
+  display: flex;
+  flex-direction: column;
+}
+section .testimonial_section .swiper-slide p {
+  color: rgb(116, 120, 124);
+  font-size: 1.2em;
+  margin-left: 30px;
+}
+section .testimonial_section .swiper-slide h4 {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 600;
+  color: rgb(16, 55, 65);
+}
+section .testimonial_section .swiper-slide .img_name {
+  display: flex;
+  background-color: white;
+  border-radius: 60px 0 0 60px;
+  width: 98%;
+  margin-left: 30px;
+}
+section .testimonial_section .swiper-slide .img_name .pho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+section .testimonial_section .swiper-slide .img_name img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+section .testimonial_section .swiper-slide .img_name .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+section .testimonial_section .swiper-slide .img_name i {
+  color: rgb(243, 89, 54);
+  font-size: 3em;
+  margin-top: 20px;
+  margin-left: 230px;
+}
+
+.prev {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+.next {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.prev, .next {
+  font-size: 2rem;
+  background-color: orangered;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: rgb(16, 55, 65);
+  height: auto;
+}
+.footer .footer_row .get_in_touch h3, .footer .footer_row .quik_links h3, .footer .footer_row .photo_gallery h3, .footer .footer_row .news_letter h3 {
+  font-weight: 600;
+  font-family: "Lobster Two", sans-serif;
+  padding: 10px;
+  color: white;
+}
+.footer .footer_row .get_in_touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.footer .footer_row .get_in_touch p {
+  color: rgb(136, 155, 160);
+}
+.footer .footer_row .get_in_touch .icons {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer .footer_row .get_in_touch .icons a {
+  margin: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+}
+.footer .footer_row .get_in_touch .icons a i {
+  color: white;
+}
+.footer .footer_row .get_in_touch .icons a:hover {
+  background-color: rgb(238, 74, 33);
+  transition: 0.5s;
+}
+.footer .footer_row .quik_links {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.footer .footer_row .quik_links .links {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer_row .quik_links .links a {
+  text-decoration: none;
+  color: rgb(136, 155, 160);
+  margin: 5px;
+  letter-spacing: 1px;
+}
+.footer .footer_row .quik_links .links a:hover {
+  color: rgb(243, 89, 54);
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.footer .footer_row .photo_gallery {
+  padding: 20px;
+}
+.footer .footer_row .photo_gallery .gallery img {
+  margin: 4px;
+  border-radius: 10px;
+  border: 5px solid white;
+}
+.footer .footer_row .news_letter {
+  padding: 20px;
+}
+.footer .footer_row .news_letter p {
+  color: rgb(136, 155, 160);
+}
+.footer .footer_row .news_letter .email input {
+  padding: 12px;
+  outline: none;
+  border: 1px solid rgb(120, 122, 124);
+  border-radius: 10px;
+  position: relative;
+  background-color: rgb(16, 55, 65);
+}
+.footer .footer_row .news_letter .email:focus {
+  box-shadow: rgb(243, 89, 54);
+}
+.footer .footer_row .news_letter .email button {
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 50px;
+  margin-top: 6px;
+  background-color: rgb(243, 89, 54);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1000px) {
+  .main .sub_main nav .nav_container .collapse {
+    display: normal;
+    align-items: normal;
+    justify-content: normal;
+  }
+  .main .sub_main nav .nav_container .collapse ul li a {
+    font-weight: 500;
+  }
+  .main .sub_main nav .nav_container .collapse ul li a:hover {
+    color: rgb(254, 93, 55);
+  }
+  .main .sub_main nav .nav_container .collapse ul .dropdown .dropdown-toggle {
+    cursor: pointer;
+  }
+  .main .sub_main nav .nav_container .collapse ul .dropdown:focus .dropdown-menu {
+    display: block;
+  }
+  .main .sub_main nav .nav_container .join {
+    display: none;
+  }
+  .carousel {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .carousel .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption {
+    border: 1px solid black;
+    background-color: black;
+  }
+}
